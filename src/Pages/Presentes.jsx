@@ -1,80 +1,79 @@
-// function Presentes() {
-//     return (
+function Presentes() {
+    return (
+        <>
+            <header className="py-3 text-center bg-white">
+                <div className="container">
+                    <h1 className="display-4">PRESENTES</h1>
+                </div>
+            </header>
 
-//     <header class="py-3 text-center bg-white">
-//     <div class="container">
-//       <h1 class="display-4">PRESENTES</h1>
-//     </div>
-//   </header>
+            <br />
 
-//      <br />
+            <div className="container-fluid my-4 py-3" />
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+                <div className="card mb-3" style="max-width: 600px;">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="Imagens/mãe.jpg" className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title"><strong>Dias das mães</strong></h5>
+                                <p className="card-text">Caixa com brigadeiros (quantidade a consultar) com letreiro e doce personalizado.</p>
+                                <a href="pedido.html" className="btn btn-secondary">R$20,00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-//       <div class="container-fluid my-4 py-3"/>
-//      <div class="d-flex flex-wrap justify-content-center gap-3">
-//       <div class="card mb-3" style="max-width: 600px;">
-//             <div class="row g-0">
-//           <div class="col-md-4">
-//                <img src="Imagens/mãe.jpg" class="img-fluid rounded-start" alt="..."/>
-//              </div>
-//              <div class="col-md-8">
-//               <div class="card-body">
-//               <h5 class="card-title"><strong>Dias das mães</strong></h5>
-//               <p class="card-text">Caixa com brigadeiros (quantidade a consultar) com letreiro e doce personalizado.</p>
-//               <a href="pedido.html" class="btn btn-secondary">R$20,00</a>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
+                <div className="card mb-3" style="max-width: 600px;">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="Imagens/pais.jpg" className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title"><strong>Dia dos pais</strong></h5>
+                                <p className="card-text">Caixa com 10 brigadeiros (sabores a consultar) e mais uma bebida de sua escolha.</p>
+                                <a href="pedido.html" class="btn btn-secondary">R$30,00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-//       <div class="card mb-3" style="max-width: 600px;">
-//         <div class="row g-0">
-//           <div class="col-md-4">
-//             <img src="Imagens/pais.jpg" class="img-fluid rounded-start" alt="..."/>
-//           </div>
-//           <div class="col-md-8">
-//             <div class="card-body">
-//               <h5 class="card-title"><strong>Dia dos pais</strong></h5>
-//               <p class="card-text">Caixa com 10 brigadeiros (sabores a consultar) e mais uma bebida de sua escolha.</p>
-//               <a href="pedido.html" class="btn btn-secondary">R$30,00</a>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
+            <div className="container-fluid" />
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+                <div className="card mb-3" style="max-width: 600px;">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="Imagens/te amo.jpg" className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title"><strong>Dia dos namorados</strong></h5>
+                                <p className="card-text">Caixa com brigadeiros (quantidade a consultar) com letreiro e doce personalizado.</p>
+                                <a href="pedido.html" className="btn btn-secondary">R$20,00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-//     <div class="container-fluid"/>
-//       <div class="d-flex flex-wrap justify-content-center gap-3">
-//         <div class="card mb-3" style="max-width: 600px;">
-//           <div class="row g-0">
-//             <div class="col-md-4">
-//               <img src="Imagens/te amo.jpg" class="img-fluid rounded-start" alt="..."/>
-//             </div>
-//             <div class="col-md-8">
-//               <div class="card-body">
-//                 <h5 class="card-title"><strong>Dia dos namorados</strong></h5>
-//                 <p class="card-text">Caixa com brigadeiros (quantidade a consultar) com letreiro e doce personalizado.
-//                 </p>
-//                 <a href="pedido.html" class="btn btn-secondary">R$20,00</a>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//           <div class="card mb-3" style="max-width: 600px;"/>
-//           <div class="row g-0">
-//             <div class="col-md-4">
-//               <img src="Imagens/ovop.jpg" class="img-fluid rounded-start" alt="..."/>
-//             </div>
-//             <div class="col-md-8">
-//               <div class="card-body">
-//                 <h5 class="card-title"><strong>Mini ovos</strong></h5>
-//                 <p class="card-text">Uma otima opção para presentear na Páscoa, opções de 30gr e 50gr.</p>
-//                 <a href="pedido.html" class="btn btn-secondary">R$7,00 und</a>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div >
-
-//     )
-// }
+                <div className="card mb-3" style="max-width: 600px;">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="Imagens/ovop.jpg" className="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title"><strong>Mini ovos</strong></h5>
+                                <p className="card-text">Uma otima opção para presentear na Páscoa, opções de 30gr e 50gr.</p>
+                                <a href="pedido.html" className="btn btn-secondary">R$7,00 und</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div >
+        </>
+    )
+}

@@ -6,7 +6,7 @@ function Navbar() {
 
         <nav className="navbar navbar-expand-lg shadow-sm">
             <div className="container">
-                <a className="navbar-brand d-flex align-items-center" href="#">
+                <a className="navbar-brand d-flex align-items-center"  href="#">
                    <img src={logo2} alt="Brigs Logo" className="logo me-2" />
                     Brigs Confeitaria
                 </a>
