@@ -7,7 +7,7 @@ function Card({ title, description, imageUrl }) {
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div className="col">
                     <div className="card h-100">
-                        <img src={imageUrl} className="card-img-top" alt={title} />
+                        <img src="./assets/brigadeiro1.jpg" className="card-img-top" alt="Doces" />
                         <div className="card-body text-center">
                             <h5 className="card-title">DOCES</h5>
                         </div>

@@ -1,3 +1,4 @@
+
 function Presentes() {
     return (
         <>
@@ -11,10 +12,10 @@ function Presentes() {
 
             <div className="container-fluid my-4 py-3" />
             <div className="d-flex flex-wrap justify-content-center gap-3">
-                <div className="card mb-3" style="max-width: 600px;">
+                <div className="card mb-3" style={{ maxWidth: '600px' }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="Imagens/mãe.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img src="./assets/mãe.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -26,16 +27,16 @@ function Presentes() {
                     </div>
                 </div>
 
-                <div className="card mb-3" style="max-width: 600px;">
+                <div className="card mb-3" style={{ maxWidth: '600px' }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="Imagens/pais.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img src="./assets/pais.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title"><strong>Dia dos pais</strong></h5>
                                 <p className="card-text">Caixa com 10 brigadeiros (sabores a consultar) e mais uma bebida de sua escolha.</p>
-                                <a href="pedido.html" class="btn btn-secondary">R$30,00</a>
+                                <a href="pedido.html" className="btn btn-secondary">R$30,00</a>
                             </div>
                         </div>
                     </div>
@@ -44,10 +45,10 @@ function Presentes() {
 
             <div className="container-fluid" />
             <div className="d-flex flex-wrap justify-content-center gap-3">
-                <div className="card mb-3" style="max-width: 600px;">
+                <div className="card mb-3" style={{ maxWidth: '600px' }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="Imagens/te amo.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img src="./assets/te amo.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -59,10 +60,10 @@ function Presentes() {
                     </div>
                 </div>
 
-                <div className="card mb-3" style="max-width: 600px;">
+                <div className="card mb-3" style={{ maxWidth: '600px' }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="Imagens/ovop.jpg" className="img-fluid rounded-start" alt="..." />
+                            <img src="./assets/ovop.jpg" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -77,3 +78,5 @@ function Presentes() {
         </>
     )
 }
+
+export default Presentes;
