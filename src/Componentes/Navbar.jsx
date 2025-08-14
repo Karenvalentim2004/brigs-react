@@ -29,10 +29,10 @@ function Navbar() {
                                 <li><Link className="dropdown-item" to="/Bolos">Bolos</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item"><Link className="nav-link" to="/presentes">Presentes</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/novidades">Novidades</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/pedido">Faça seu pedido</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/contato">Contato</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Presentes">Presentes</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Novidades">Novidades</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Pedido">Faça seu pedido</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Contato">Contato</Link></li>
                     </ul>
                 </div>
             </div>

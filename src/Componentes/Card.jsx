@@ -12,7 +12,7 @@ function Card({ title, description, imageUrl }) {
                             <h5 className="card-title">DOCES</h5>
                         </div>
                         <div className="card-footer text-center">
-                            <a href="doces.html" className="btn btn-secondary">Acessar</a>
+                            <a href="/Doces" className="btn btn-secondary">Acessar</a>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ function Card({ title, description, imageUrl }) {
                             <h5 className="card-title">OVOS DE PÁSCOA</h5>
                         </div>
                         <div className="card-footer text-center">
-                            <a href="ovosdepascoa.html" className="btn btn-secondary">Acessar</a>
+                            <a href="/OvosDePascoa" className="btn btn-secondary">Acessar</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function Card({ title, description, imageUrl }) {
                             <h5 className="card-title">BOLOS</h5>
                         </div>
                         <div className="card-footer text-center">
-                            <a href="bolos.html" className="btn btn-secondary">Acessar</a>
+                            <a href="/bolo" className="btn btn-secondary">Acessar</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ function Card({ title, description, imageUrl }) {
                             <h5 className="card-title">PRESENTES</h5>
                         </div>
                         <div className="card-footer text-center">
-                            <a href="presentes.html" className="btn btn-secondary">Acessar</a>
+                            <a href="/Presentes" className="btn btn-secondary">Acessar</a>
                         </div>
                     </div>
                 </div>
