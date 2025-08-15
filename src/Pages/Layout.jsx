@@ -8,7 +8,7 @@ function Layout() {
     return (
         <>
 
-            <div >
+            <div className='container-tudo' >
                 <Navbar />
                 <Outlet />
             </div>

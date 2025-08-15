@@ -8,9 +8,8 @@ function Presentes() {
                 </div>
             </header>
 
-            <br />
 
-            <div className="container-fluid my-4 py-3" />
+            <div className="container-fluid my-4 py-3">
             <div className="d-flex flex-wrap justify-content-center gap-3">
                 <div className="card mb-3" style={{ maxWidth: '600px' }}>
                     <div className="row g-0">
@@ -75,6 +74,7 @@ function Presentes() {
                     </div>
                 </div>
             </div >
+            </div>
         </>
     )
 }

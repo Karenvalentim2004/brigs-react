@@ -18,21 +18,21 @@ nav {
   height: 90px;
 }
 
-    /* Garante que o menu mobile tenha o mesmo fundo da navbar */
-    .navbar .navbar-collapse {
-      background-color: #d9f4fb; /* cor padrão do Bootstrap, ajuste se sua navbar for diferente */
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-      border-radius: 0 0 8px 8px;
-      padding: 0;
-      margin: 0;
-    }
-    @media (min-width: 992px) {
-      .navbar .navbar-collapse {
-        background-color: transparent;
-        box-shadow: none;
-        border-radius: 0;
-      }
-    }
+.navbar .navbar-collapse {
+  background-color: #d9f4fb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 0 0 8px 8px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-collapse {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
 
 footer {
   text-align: center;
@@ -218,8 +218,8 @@ section {
 }
 
 .social-icons a img {
-  width: 150px;
-  height: 150px;
+  width: 115px;
+  height: 115px;
   object-fit: contain;
   transition: transform 0.3s;
 }
@@ -305,4 +305,8 @@ iframe {
 
 .botao-link:hover {
   background-color: #d9f4fb;
+}
+
+.container-tudo {
+  margin-bottom: 60px;
 }

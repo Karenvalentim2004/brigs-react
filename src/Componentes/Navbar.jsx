@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg shadow-sm">
-            <div className="container">
+            <div className="container-fluid container-nav" >
                 <Link className="navbar-brand d-flex align-items-center" to="/">
                     <img src="/assets/logo2.png" alt="Brigs Logo" className="logo me-2" />
                     Brigs Confeitaria

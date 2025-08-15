@@ -1,4 +1,18 @@
-function Novidades () {
+import React, { useState, useRef, useEffect } from 'react';
+import { Modal, Button } from 'react-bootstrap';
+
+function Novidades() {
+    const [show, setShow] = useState(false);
+    const [imagemSelecionada, setImagemSelecionada] = useState('');
+
+    const handleClose = () => setShow(false);
+
+    const handleShow = (src) => {
+        setImagemSelecionada(src);
+        setShow(true);
+    };
+
+
     return (
         <>
             <header className="py-3 text-center bg-white">
@@ -7,13 +21,12 @@ function Novidades () {
                 </div>
             </header>
 
-
             <div className="container-fluid my-4 py-3">
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                    <div className="card mb-3" style={{maxWidth: "600px"}}>
+                    <div className="card mb-3" style={{ maxWidth: "600px" }}>
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src="./assets//pao de mel.jpg" className="img-fluid rounded-start" alt="..." />
+                                <img src="./assets/pao de mel.jpg" className="img-fluid rounded-start" onClick={() => handleShow('./assets/pao de mel.jpg')} />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -25,10 +38,10 @@ function Novidades () {
                         </div>
                     </div>
 
-                    <div className="card mb-3" style={{maxWidth: "600px"}}>
+                    <div className="card mb-3" style={{ maxWidth: "600px" }}>
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src="./assets//bolo no pote.jpg" className="img-fluid rounded-start" alt="..." />
+                                <img src="./assets/bolo no pote.jpg" className="img-fluid rounded-start" onClick={() => handleShow('./assets/bolo no pote.jpg')} />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -43,10 +56,10 @@ function Novidades () {
                         </div>
                     </div>
 
-                    <div className="card mb-3" style={{maxWidth: "600px"}}>
+                    <div className="card mb-3" style={{ maxWidth: "600px" }}>
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src="./assets//baiana.jpg" className="img-fluid rounded-start" alt="..." />
+                                <img src="./assets/baiana.jpg" className="img-fluid rounded-start" onClick={() => handleShow('./assets/baiana.jpg')} />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -57,43 +70,50 @@ function Novidades () {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="container-fluid">
-                    <div className="d-flex flex-wrap justify-content-center gap-3">
-                        <div className="card mb-3" style={{maxWidth: "600px"}}>
-                            <div className="row g-0">
-                                <div className="col-md-4">
-                                    <img src="./assets//morangodomor2.jpg" className="img-fluid rounded-start" alt="..." />
-                                </div>
-                                <div className="col-md-8">
-                                    <div className="card-body">
-                                        <h5 className="card-title"><strong>MORANGO DO AMOR</strong></h5>
-                                        <p className="card-text">Bombom de morango com brigadeiro de ninho com uma deliciosa e crocante cobertura de caramelo.</p>
-                                        <a href="pedido.html" className="btn btn-secondary">R$14,00</a>
-                                    </div>
+                    <div className="card mb-3" style={{ maxWidth: "600px" }}>
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                                <img src="./assets/morangodomor2.jpg" className="img-fluid rounded-start" onClick={() => handleShow('./assets/morangodomor2.jpg')} />
+                            </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h5 className="card-title"><strong>MORANGO DO AMOR</strong></h5>
+                                    <p className="card-text">Bombom de morango com brigadeiro de ninho com uma deliciosa e crocante cobertura de caramelo.</p>
+                                    <a href="pedido.html" className="btn btn-secondary">R$14,00</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div className="card mb-3" style={{maxWidth: "600px"}}>
-                            <div className="row g-0">
-                                <div className="col-md-4">
-                                    <img src="./assets//brownie.jpg" className="img-fluid rounded-start" alt="..." />
-                                </div>
-                                <div className="col-md-8">
-                                    <div className="card-body">
-                                        <h5 className="card-title"><strong>BROWNIE</strong></h5>
-                                        <p className="card-text">Brownie com uma crocante casquinha e recehado com brigadeiro.</p>
-                                        <a href="pedido.html" className="btn btn-secondary">R$9,00</a>
-                                    </div>
+                    </div>
+                    <div className="card mb-3" style={{ maxWidth: "600px" }}>
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                                <img src="./assets/brownie.jpg" className="img-fluid rounded-start" onClick={() => handleShow('./assets/brownie.jpg')} />
+                            </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h5 className="card-title"><strong>BROWNIE</strong></h5>
+                                    <p className="card-text">Brownie com uma crocante casquinha e recehado com brigadeiro.</p>
+                                    <a href="pedido.html" className="btn btn-secondary">R$9,00</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+
             </div>
+
+
+            <Modal show={show} onHide={handleClose} centered>
+
+                <Modal.Body className="text-center">
+                    <img
+                        src={imagemSelecionada}
+                        alt="Imagem selecionada"
+                        className="img-fluid"
+                    />
+                </Modal.Body>
+
+            </Modal>
         </>
     )
 }

@@ -15,7 +15,6 @@ function Doces() {
                 <a href="/Cone" className="botao-link">CONES</a>
             </div>
 
-
             <div className="container my-5 py-3">
                 <p className="lead text-center">
                     Confira:

@@ -34,7 +34,7 @@ function Card({ title, description, imageUrl }) {
                             <h5 className="card-title">BOLOS</h5>
                         </div>
                         <div className="card-footer text-center">
-                            <a href="/bolo" className="btn btn-secondary">Acessar</a>
+                            <a href="/Bolos" className="btn btn-secondary">Acessar</a>
                         </div>
                     </div>
                 </div>
